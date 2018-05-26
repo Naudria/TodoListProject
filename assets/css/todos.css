@@ -1,0 +1,89 @@
+h1 {
+	background: #4BC0C8;
+	color: white;
+	margin:0;
+	padding: 10px 20px;
+	text-transform: uppercase;
+	font-size: 24px;
+	font-weight: normal;
+}
+
+.fa-pencil-alt {
+	float: right;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background: #FEAC5E;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+
+li {
+	background: #fff;
+	color: #666;
+	height: 40px;
+	line-height: 40px; /*Aligns the text center horizontally*/
+}
+
+/*Gives every other li this color*/
+li:nth-child(2n) {
+	background: #f7f7f7;
+}
+
+li span {
+	background: #e74c3c;
+	height: 40px;
+	width: 0;
+	margin-right: 20px;
+	text-align: center;
+	color: white;
+	display: inline-block;
+	transition: 0.2s linear;
+	opacity: 0;
+}
+
+li:hover span {
+	width: 40px;
+	opacity: 1.0;
+}
+
+input {
+	color: #4BC0C8;
+	font-size: 18px;
+	border: 3px solid rgba(0,0,0, 0);
+	background-color: #f7f7f7;
+	width: 100%;
+	padding: 15px;
+	box-sizing: border-box; /*Limits the input box to the size of the container*/
+}
+
+input:focus {
+	background: #fff;
+	border: 3px solid #4BC0C8;
+	outline: none; /*Gets rid of the blue border the browser automatically gives it*/
+}
+
+::placeholder {
+	opacity: 0.5;
+}
+
+#container {
+	width: 360px;
+	margin: 100px auto;
+	background: #f7f7f7;
+	box-shadow: 0 0 3px rgba(0,0,0, 0.1);
+}
+
+.completed {
+	color: gray;
+	text-decoration: line-through;
+}
